@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body {
+    background-image: url('https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #FFD700;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.contact-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.contact-button a {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contact-button a:hover {
+    background-color: #0056b3;
+}
+
