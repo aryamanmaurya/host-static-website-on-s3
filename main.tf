@@ -53,7 +53,11 @@ resource "aws_s3_bucket_versioning" "bucket-versioning" {
 
 #bucket policy for public read only
 resource "aws_s3_bucket_policy" "read-only-policy" {
-  bucket = aws_s3_bucket.create-bucket.bucket
+  depends_on = [
+    aws_s3_bucket_acl.bucket-acl,
+    aws_s3_bucket_public_access_block.public_access
+  ]
+  bucket = aws_s3_bucket.create-bucket.id
 
   policy = <<POLICY
 {
